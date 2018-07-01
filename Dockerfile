@@ -7,6 +7,6 @@ RUN chmod 777 /home/ubuntu/tomcat
 RUN wget http://redrockdigimark.com/apachemirror/tomcat/tomcat-8/v8.5.32/bin/apache-tomcat-8.5.32.tar.gz -O /tmp/tomcat.tar.gz
 RUN cd /tmp && tar xvfz tomcat.tar.gz
 RUN cp -Rv /tmp/apache-tomcat-8.5.32/* /home/ubuntu/tomcat/
-ADD target/SpringMVC4.war /home/ubuntu/tomcat/SpringMVC4.war
+ADD target/SpringMVC4.war /home/ubuntu/tomcat/webapps/SpringMVC4.war
 EXPOSE 8080
 CMD ["/home/ubuntu/tomcat/bin/catalina.sh", "run"]
