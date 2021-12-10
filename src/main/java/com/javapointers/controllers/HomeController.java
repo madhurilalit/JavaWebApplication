@@ -5,7 +5,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 
 /**
- * Created by Jerry on 4/5/14.
+ * Created by Maddy on 4/5/14.
  */
 @Controller
 public class HomeController {
